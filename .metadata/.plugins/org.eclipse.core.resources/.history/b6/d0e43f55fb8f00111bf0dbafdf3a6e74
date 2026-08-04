@@ -1,0 +1,8 @@
+
+public class Snake extends Animal{
+	void attacks() {
+		System.out.println("Snake attacks...");
+	}
+	
+	
+}

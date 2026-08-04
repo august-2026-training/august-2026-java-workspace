@@ -1,0 +1,29 @@
+public class FordFigo {
+	String modelName;
+	String color;
+	
+	public FordFigo(String modelName, String color) {
+		this.modelName = modelName;
+		this.color = color;
+	}
+	
+	boolean switchOn() {
+		System.out.println(modelName + " is switched on...");
+		return true;
+	}
+	
+	boolean switchOff() {
+		System.out.println(modelName + " is switched off...");
+		return true;
+	}
+	
+	boolean accelerate() {
+		System.out.println(modelName + " is accelerated...");
+		return true;
+	}
+	
+	boolean applyBrakes() {
+		System.out.println(modelName + " has applied brakes...");
+		return true;
+	}
+}

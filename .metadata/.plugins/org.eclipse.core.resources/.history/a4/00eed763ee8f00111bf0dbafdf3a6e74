@@ -1,0 +1,14 @@
+
+public class FordDemo {
+
+	public static void main(String[] args) {
+		FordFigo figo1 = new FordFigo("FIGO", "Silver");
+		
+		figo1.switchOn();
+		figo1.accelerate();
+		figo1.applyBrakes();
+		figo1.switchOff();
+
+	}
+
+}

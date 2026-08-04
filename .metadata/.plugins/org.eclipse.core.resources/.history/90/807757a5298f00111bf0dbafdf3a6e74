@@ -1,0 +1,42 @@
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+		short sh1;
+		
+		short sh = 20;
+		
+		int in = sh; // implicit type casting
+		
+		int in1 = 42000;
+		
+		short sh2 = (short)in1; // explicit type casting
+		
+		System.out.println(sh2);
+		
+		char ch = 'a';
+		int in2 = ch; // implicit casting
+		System.out.println(ch);
+		System.out.println(in2);
+		
+		char ch1 = (char)in2; // explicit casting
+		System.out.println(ch1);
+		
+		char ch2 = 102;
+		int in2 = 'd';
+		
+		double db = 4.5;
+		System.out.println(db);
+		
+		//float fl = (float)1.5;
+		float fl = 1.5f;
+
+		System.out.println(fl);
+		
+		boolean flag = true;
+		System.out.println(flag);
+		
+		
+	}
+
+}

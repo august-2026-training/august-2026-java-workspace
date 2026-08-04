@@ -1,0 +1,7 @@
+public class Dog extends Animal{
+	void friend() {
+		System.out.println("Dog is Friendly...");
+	}
+	
+
+}

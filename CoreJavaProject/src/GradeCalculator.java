@@ -1,0 +1,22 @@
+public class GradeCalculator {
+
+	static char calculateGrade(int myMark){
+		if(myMark >= 90 && myMark <=100) {
+			return 'A';
+		}else if(myMark >= 80 && myMark < 90) {
+			return 'B';
+		}else if(myMark >= 70 && myMark < 80) {
+			return 'C';
+		}else if(myMark >= 60 && myMark < 70) {
+			return 'C';
+		}else {
+			return 'F';
+		}
+	}
+	
+	public static void main(String[] args) {
+		int mark = 70;
+		char result = calculateGrade(mark);
+		System.out.println("Your grade is : " + result);
+	}
+}

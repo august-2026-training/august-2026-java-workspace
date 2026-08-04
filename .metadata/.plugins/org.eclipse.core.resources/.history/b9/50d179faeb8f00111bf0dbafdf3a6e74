@@ -1,0 +1,33 @@
+public class Room {
+	int length;
+	int width;
+	int height;
+	String color;
+	String nameBoard;
+	
+	public Room(int length, int width, int height) {
+		this.length = length;
+		this.width = width;
+		this.height = height;
+	}
+	
+	public Room(int length, int width, int height, String color) {
+		this(length, width, height); // constructor chaining
+//		this.length = length;
+//		this.width = width;
+//		this.height = height;
+		this.color = color;
+	}
+	
+	int calculateFloorArea(){
+		int floorArea;
+		floorArea = length * width;
+		return floorArea;
+	}
+	
+	int calculatePaintingCost(int rate){
+		int wallArea = 2 * height * (width + length);
+		int costOfPainting = wallArea * rate;
+		return costOfPainting;
+	}
+}

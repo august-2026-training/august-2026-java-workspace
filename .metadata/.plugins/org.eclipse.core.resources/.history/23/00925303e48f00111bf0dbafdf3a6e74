@@ -1,0 +1,22 @@
+
+public class RoomDemo {
+
+	public static void main(String[] args) {
+		int mark;
+		mark = 70;
+		
+		System.out.println(mark);
+		
+		Room diningRoom;
+		diningRoom = new Room();
+		
+		diningRoom.length = 200;
+		diningRoom.width = 150;
+		diningRoom.height = 100;
+		
+		int fArea = diningRoom.calculateFloorArea();
+		
+		System.out.println("loor area of dining room:" + fArea);
+	}
+
+}

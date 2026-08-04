@@ -1,0 +1,14 @@
+
+public class GradeCalculator {
+
+	static char calculateGrade(int myMark){
+		
+	}
+	
+	public static void main(String[] args) {
+		int mark = 55;
+		
+		calculateGrade(mark);
+	}
+
+}

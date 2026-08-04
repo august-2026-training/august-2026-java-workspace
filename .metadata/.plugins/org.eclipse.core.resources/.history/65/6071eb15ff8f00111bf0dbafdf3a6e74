@@ -1,0 +1,7 @@
+
+public class Exhibition {
+	void exhibit(Animal animalG) {
+		animalG.livingThing();
+		animalG.mobility();
+	}
+}

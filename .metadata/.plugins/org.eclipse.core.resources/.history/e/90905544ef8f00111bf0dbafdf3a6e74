@@ -1,0 +1,8 @@
+
+public class FordFigoTitanium extends FordFigo{
+	int noOfAirbags;
+	
+	boolean ejectAirbags() {
+		System.out.println(modelName + " ejected airbags...");
+	}
+}

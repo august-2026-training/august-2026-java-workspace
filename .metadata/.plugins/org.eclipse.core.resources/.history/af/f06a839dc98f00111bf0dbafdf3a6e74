@@ -1,0 +1,11 @@
+public class Room {
+	int length;
+	int width;
+	int height;
+	
+	int calculateFloorArea(){
+		int floorArea;
+		floorArea = length * width;
+		
+	}
+}

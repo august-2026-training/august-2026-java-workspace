@@ -1,0 +1,10 @@
+
+public class Snake extends Animal{
+	void attacks() {
+		System.out.println("Snake attacks...");
+	}
+	
+	void mobility() {
+		System.out.println("Snake crawls...");
+	}
+}

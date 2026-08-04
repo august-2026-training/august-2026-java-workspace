@@ -1,0 +1,15 @@
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+		short sh1;
+		
+		short sh = 20;
+		
+		int in = sh;
+		
+		
+		
+	}
+
+}

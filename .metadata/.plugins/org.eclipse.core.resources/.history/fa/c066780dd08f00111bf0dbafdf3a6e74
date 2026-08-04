@@ -1,0 +1,11 @@
+
+public class RoomDemo {
+
+	public static void main(String[] args) {
+		int mark;
+		mark = 70;
+		
+		System.out.println(mark);
+	}
+
+}
