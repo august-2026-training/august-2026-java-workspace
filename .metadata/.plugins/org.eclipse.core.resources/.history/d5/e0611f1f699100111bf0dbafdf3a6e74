@@ -1,0 +1,19 @@
+import java.sql.SQLException;
+
+public class ExceptionDemo4 {
+	static void method3()throws SQLException {
+		System.out.println("SQL exception may occur in method 3...");
+	}
+	static void method2() {
+		method3();
+	}
+	static void method1() {
+		method2();
+	}
+
+	public static void main(String[] args) {
+		method1();
+
+	}
+
+}

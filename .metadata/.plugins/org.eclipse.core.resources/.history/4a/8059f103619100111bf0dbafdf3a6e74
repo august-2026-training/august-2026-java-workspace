@@ -2,7 +2,7 @@
 public class ExceptionDemo3 {
 
 	public static void main(String[] args) {
-		int option = 4;
+		int option = 8;
 		try {
 			if(option < 1 || option > 5) {
 				// create an custom exception object
