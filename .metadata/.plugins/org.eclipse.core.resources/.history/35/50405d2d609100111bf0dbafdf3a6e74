@@ -1,0 +1,15 @@
+public class InvalidOptionException extends Exception{
+	String msg;
+
+	public InvalidOptionException(String msg) {
+		this.msg = msg;
+	}
+
+	@Override
+	public String getMessage() {
+		return msg;
+	}
+	
+	
+	
+}

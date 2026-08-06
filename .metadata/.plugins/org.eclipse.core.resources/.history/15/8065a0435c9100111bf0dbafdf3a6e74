@@ -68,7 +68,7 @@ public class Room {
 	}
 	
 	static int doubleTheHeight(){
-		//System.out.println(length);
+		System.out.println(length);
 		return height * 2;
 	}
 }

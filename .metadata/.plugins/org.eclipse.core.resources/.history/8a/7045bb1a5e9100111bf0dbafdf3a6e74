@@ -1,0 +1,18 @@
+public class ExceptionDemo {
+
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 10;
+		int num3 = 0;
+		try {
+			num3 = num1 / num2;
+		} catch (ArithmeticException ae) {
+			System.out.println(ae.getMessage());
+			ae.printStackTrace();
+		}
+		System.out.println("Answer is: " + num3);
+		System.out.println("Division over...");
+
+	}
+
+}
