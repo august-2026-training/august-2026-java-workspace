@@ -1,24 +1,60 @@
 public class Room {
-	int length;
-	int width;
-	int height;
-	String color;
-	String nameBoard;
-	  
-	public Room(int length, int width, int height) {
+	private int length;
+	private int width;
+	private static int height;
+	private String color;
+	private String nameBoard;
+	 
+	static {
+		height = 100;
+	}
+//	public Room(int length, int width, int height) {
+//		this.length = length;
+//		this.width = width;
+//		this.height = height;
+//	}
+	
+	public Room(int length, int width) {
 		this.length = length;
 		this.width = width;
-		this.height = height;
 	}
 	
 	public Room(int length, int width, int height, String color) {
-		this(length, width, height); // constructor chaining
+		this(length, width); // constructor chaining
 //		this.length = length;
 //		this.width = width;
 //		this.height = height;
 		this.color = color;
 	}
 	
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public String getColor() {
+		return this.color;
+	}
+	
+	public String getNameBoard() {
+		return nameBoard;
+	}
+
+	public void setNameBoard(String nameBoard) {
+		this.nameBoard = nameBoard;
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
 	int calculateFloorArea(){
 		int floorArea;
 		floorArea = length * width;
@@ -29,5 +65,10 @@ public class Room {
 		int wallArea = 2 * height * (width + length);
 		int costOfPainting = wallArea * rate;
 		return costOfPainting;
+	}
+	
+	static int doubleTheHeight(){
+		System.out.println(length);
+		return height * 2;
 	}
 }

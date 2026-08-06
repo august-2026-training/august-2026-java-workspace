@@ -1,0 +1,10 @@
+public class Demo {
+
+	public static void main(String[] args) {
+		System.out.println("Hello JAVA!!");
+		
+		double bill = 3.4;
+		System.out.printf("Electricity Bill = ₹%.2f%n", bill);
+	}
+
+}

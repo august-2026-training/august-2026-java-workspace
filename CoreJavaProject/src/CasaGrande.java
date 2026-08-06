@@ -1,0 +1,16 @@
+public class CasaGrande implements SafetyGuuidlines2022{
+
+	@Override
+	public boolean protectHead() {
+		System.out.println("Casa Grande provides steel helmet...");
+		return true;
+	}
+
+	@Override
+	public boolean protectFeet() {
+		System.out.println("Casa Grande provides steel shoes...");
+		return false;
+	}
+
+	// own methods
+}

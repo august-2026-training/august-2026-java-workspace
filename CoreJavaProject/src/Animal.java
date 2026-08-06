@@ -1,9 +1,11 @@
-public class Animal {
+abstract public class Animal {
 	void livingThing() {
 		System.out.println("Animal Breathes...");
 	}
 	
-	void mobility() {
-		System.out.println("Animal moves...");
-	}
+//	void mobility() {
+//		System.out.println("Animal moves...");
+//	}
+	
+	abstract void mobility();
 }

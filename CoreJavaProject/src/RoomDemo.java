@@ -8,7 +8,7 @@ public class RoomDemo {
 		System.out.println(mark);
 		
 		Room diningRoom;
-		diningRoom = new Room(200, 150, 100);
+		diningRoom = new Room(200, 150);
 		
 //		diningRoom.length = 200;
 //		diningRoom.width = 150;
@@ -19,6 +19,12 @@ public class RoomDemo {
 		System.out.println("Floor area of dining room:" + fArea);
 		
 		Room r1 = diningRoom;
+		//diningRoom.color = "White";
+		diningRoom.setColor("White");
+		diningRoom.setNameBoard("Dining Room");
+		
+		
+		
 	}
 
 }

@@ -1,0 +1,17 @@
+import java.text.DecimalFormat;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		System.out.println("Hello JAVA!!");
+		
+		double bill = 3.4;
+		System.out.printf("Electricity Bill = ₹%.2f%n", bill);
+		
+		DecimalFormat df = new DecimalFormat("0.00");
+
+		double bill1 = 1234.56789;
+		System.out.println(df.format(bill1));
+	}
+
+}
