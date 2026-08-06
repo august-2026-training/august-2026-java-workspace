@@ -1,0 +1,24 @@
+
+public class ObjectEqualsAndHashCodeDemo {
+
+	public static void main(String[] args) {
+		Room r1 = new Room(300, 200);
+		Room r2 = new Room(400, 250);
+		Room r3 = new Room(300, 200);
+		Room r4 = r1;
+		
+		System.out.println(r1==r2); // false
+		System.out.println(r2==r3); // false
+		System.out.println(r3==r4); // false
+		System.out.println(r4==r1); // true
+		
+		System.out.println("-----------");
+		
+		System.out.println(r1.equals(r2)); // false
+		System.out.println(r2.equals(r3)); // false
+		System.out.println(r3.equals(r4)); // false
+		System.out.println(r4.equals(r1)); // true
+
+	}
+
+}

@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Room {
 	private int length;
 	private int width;
@@ -73,24 +71,4 @@ public class Room {
 		//System.out.println(length);
 		return height * 2;
 	}
-
-	@Override
-	public int hashCode() {
-		//return Objects.hash(length, width);
-		return length * width;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Room other = (Room) obj;
-		return length == other.length && width == other.width;
-	}
-	
-	
 }
