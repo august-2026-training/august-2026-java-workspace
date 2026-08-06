@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		//ArrayList<String> allCountries = new ArrayList<>();
+		List<String> allCountries = new ArrayList<>();
+		
+		// CRUD
+		
+		// C - create/insert
+		String str = "India";
+		allCountries.add(str);
+		allCountries.add("Nepal");
+		allCountries.add("China");
+		allCountries.add("Nepal");
+		allCountries.add("Sri Lanka");
+		
+		
+
+	}
+
+}
