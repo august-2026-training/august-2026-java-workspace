@@ -1,0 +1,10 @@
+
+public class OperationDemo {
+
+	public static void main(String[] args) {
+		Operation add = new AdditionOperation();
+		System.out.println(add.operate(5, 3));
+
+	}
+
+}

@@ -1,0 +1,42 @@
+
+public class OperationDemo {
+
+	public static void main(String[] args) {
+
+		// accessing Operation using conventional way
+		Operation add = new AdditionOperation();
+		System.out.println(add.operate(5, 3));
+
+		Operation multiply = new MutliplicationOperation();
+		System.out.println(multiply.operate(2, 5));
+
+		// accessing operation through anonymous classes
+		Operation add2 = new Operation(){
+			@Override
+			public int operate(int a, int b) {
+				return a + b;
+			}
+		};
+		
+		System.out.println(add2.operate(25, 30));
+		
+		Operation multiply2 = new Operation(){
+			@Override
+			public int operate(int a, int b) {
+				return a * b;
+			}
+		};
+		
+		System.out.println(multiply.operate(5, 10));
+		
+		// accessing functional interface through lambda expression
+		
+		Operation add3 = (a, b) -> a + b;
+		System.out.println(add3.operate(100, 200));
+		
+		Operation multiply3 = (m, n) -> m * n;
+		System.out.println(multiply3.operate(11, 12));
+	
+	}
+
+}

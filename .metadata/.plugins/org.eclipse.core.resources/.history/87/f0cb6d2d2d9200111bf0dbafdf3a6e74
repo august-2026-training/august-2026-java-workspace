@@ -1,0 +1,24 @@
+
+public class OperationDemo {
+
+	public static void main(String[] args) {
+
+		// accessing Operation using conventional way
+		Operation add = new AdditionOperation();
+		System.out.println(add.operate(5, 3));
+
+		Operation multiply = new MutliplicationOperation();
+		System.out.println(multiply.operate(2, 5));
+
+		// accessing operation through anonymous classes
+		Operation add2 = new Operation(){
+			@Override
+			public int operate(int a, int b) {
+				return a + b;
+			}
+		};
+		
+		System.out.println(add2.operate(25, 30));
+	}
+
+}

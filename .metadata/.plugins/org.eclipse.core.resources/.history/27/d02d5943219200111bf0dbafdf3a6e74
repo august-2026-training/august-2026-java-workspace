@@ -1,0 +1,35 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		Map<String, Long> phoneBook = new HashMap<>();
+		
+		System.out.println(phoneBook.size());
+		System.out.println(phoneBook);
+		
+		// CRUD
+		
+		// C - create 
+		
+		phoneBook.put("ABC", 123467896L);
+		phoneBook.put("XYZ", 77777777L);
+		phoneBook.put("LMN", 222222222L);
+		phoneBook.put("QWE", 333333333L);
+		phoneBook.put(null, 44444444L);
+		
+		// R - Read
+		System.out.println(phoneBook.get("LMN"));
+		
+		Set<String> allKeys = phoneBook.keySet();
+		for(String eachKey: allKeys) {
+			System.out.println(eachKey + " : " + phoneBook.get(eachKey));
+		}
+		
+		// U- Update
+		phoneBook.put("XYZ", 55665566L);
+	}
+
+}
